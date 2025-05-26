@@ -1,0 +1,124 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  position: relative;
+}
+
+.app-logo {
+  height: 50px;
+  width: auto;
+  padding: 0px 7px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 17px;
+}
+
+/* .nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+} */
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 10001;
+  width: 30px;
+  height: 25px;
+  justify-content: center;
+  position: relative;
+}
+
+
+
+.hamburger {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+.hamburger:nth-child(1) {
+  top: 0;
+}
+.hamburger:nth-child(2) {
+  top: 11px;
+}
+.hamburger:nth-child(3) {
+  top: 22px;
+}
+
+.nav-toggle.active .hamburger:nth-child(1) {
+  transform: rotate(45deg);
+  top: 11px;
+}
+.nav-toggle.active .hamburger:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.active .hamburger:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 11px;
+}
+
+/* section */
+.notif-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.notif-menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  z-index: 999;
+  border-radius: 8px;
+}
+
+.notif-menu.hidden {
+  display: none;
+}
+
+.nav-icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+#notif-icon.active {
+  color: gold;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 9999;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+}

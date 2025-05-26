@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  line-height: 1.6;
+  color: #333;
+  padding-top: 70px;
+}
+
+header {
+  background: #007bff;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  margin-top: 80px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-menu a {
+  color: #ffff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.nav-menu a.active {
+  background: #123458;
+  border-radius: 5px;
+}
+
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #123458; 
+  outline-offset: 1px;
+  border-radius: 6px;
+  padding: 4px;
+}
+
+button:focus-visible {
+  outline: 3px solid #123458;
+  outline-offset: 1px;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 1005;
+}
+
+.skip-link:focus {
+  top: 10px;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+}
+
+#map,
+#detail-map {
+  margin-top: 15px;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

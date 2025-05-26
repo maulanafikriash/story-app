@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#main {
+    flex: 1;
+}
+
+#footer {
+    background-color: #fff;
+    color: #555;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    #footer {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Story App",
+  "short_name": "StoryApp",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "description": "Aplikasi untuk membagikan cerita harianmu.",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Add Story",
+      "url": "/#addStory",
+      "icons": [
+        {
+          "src": "/icons/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop-1.png",
+      "type": "image/png",
+      "sizes": "1366x768",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshots/mobile-1.png",
+      "type": "image/png",
+      "sizes": "428x679",
+      "form_factor": "narrow"
+    }
+  ]
+}

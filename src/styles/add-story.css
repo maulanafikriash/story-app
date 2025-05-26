@@ -1,0 +1,102 @@
+.add-story-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.add-story-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.add-story-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.form-group textarea,
+.form-group input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.camera-group .camera-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.camera-container video {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.camera-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.camera-buttons button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.camera-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.map-container {
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    padding: 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 600px) {
+    .add-story-container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .camera-container video {
+        max-width: 100%;
+    }
+}

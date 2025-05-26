@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Story App</title>
+  <link rel="shortcut icon" href="/icons/icon-512x512.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#4A90E2" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="/src/styles/main.css" />
+  <link rel="stylesheet" href="/src/styles/home.css" />
+  <link rel="stylesheet" href="/src/styles/login.css" />
+  <link rel="stylesheet" href="/src/styles/register.css" />
+  <link rel="stylesheet" href="/src/styles/header.css" />
+  <link rel="stylesheet" href="/src/styles/favorite.css" />
+  <link rel="stylesheet" href="/src/styles/detail-story.css" />
+  <link rel="stylesheet" href="/src/styles/add-story.css" />
+  <link rel="stylesheet" href="/src/styles/footer.css" />
+  <link rel="stylesheet" href="/src/styles/not-found.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <a href="#" class="skip-link">Skip to content</a>
+
+    <header id="header"></header>
+
+    <main id="main"></main>
+
+    <footer id="footer"></footer>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+  <script type="module">
+    import { renderFooter } from "/src/components/footer.js";
+    renderFooter();
+  </script>
+</body>
+
+</html>
