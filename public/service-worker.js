@@ -29,9 +29,6 @@ if (workbox) {
           maxAgeSeconds: 30 * 24 * 60 * 60,
         }),
       ],
-      fetchOptions: {
-        mode: "no-cors",
-      },
     })
   );
 
